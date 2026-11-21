@@ -22,5 +22,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          file: ./frontend/Dockerfile
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard-fe-master:latest
